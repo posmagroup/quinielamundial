@@ -1,0 +1,37 @@
+<head>
+  <title>Mundial 2014 | Quiniela</title>
+</head>
+
+<body>
+  {{>menu}}
+  {{>welcome}}
+</body>
+
+<template name="welcome">
+  <div class="container">
+    <h1>Bienvenido</h1>
+    <p>
+      La mejor quiniela!!!.
+    </p>
+  </div>
+</template>
+
+<template name="menu">
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Quniela</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        {{>loginButtons}}
+      </ul>
+    </div>
+  </nav>
+</template>
